@@ -1,19 +1,14 @@
 package dev.coms4156.project.individualproject;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 /** 
- * This test class verifies the functionality of the {@link Course} class by testing its methods.
- * It uses JUnit for testing and verifies the expected behavior of the course object.
+ * This test class verifies the functionality of the {@link Course} class 
+ * by testing its methods.
  */
 @SpringBootTest
 @ContextConfiguration
@@ -55,7 +50,7 @@ public class CourseUnitTests {
 
   @Test
   public void enrollStudentsTest() {
-    for(int i = 0; i < 10; i++){
+    for (int i = 0; i < 10; i++) {
       Assertions.assertTrue(testCourse.enrollStudent());
     }
     Assertions.assertTrue(testCourse.isCourseFull());
@@ -68,7 +63,6 @@ public class CourseUnitTests {
     testCourse.enrollStudent();
     Assertions.assertTrue(testCourse.dropStudent());
   }
-
 
   @Test
   public void reassignFuncTest() {
