@@ -1,4 +1,3 @@
-Bugs:
 Course:
 1. Enrolled student count defaults to 500 in constructor
 2. Getter functions between instructor and location have swapped functionality
