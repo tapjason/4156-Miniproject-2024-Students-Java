@@ -9,3 +9,7 @@ Department:
 1. Incorrect return type for some getters
 2. Incorrect check for dropPersonFromMajor()
 3. Added this when referencing class variables for conciseness
+
+RouteController:
+1. Some incorrect https return codes between OK, FORBIDDEN, and NOT_FOUND
+2. Fixed findCourseTime function returning correct time respective to course
